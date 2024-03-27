@@ -1,6 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect} from 'react'
 import './App.css'
-import { useDispatch } from 'react-redux'
+import { useDispatch} from 'react-redux'
+import  {Header} from './components/Header';
+import {Email} from './components/Email';
+import { addUser } from './redux/userSlice';
+
+
 
 function App() {
 
@@ -17,9 +22,10 @@ function App() {
 
   return (
     <>
-     
+        <Header />
+        <Email />
     </>
   )
 }
 
-export default App
+export default App;
