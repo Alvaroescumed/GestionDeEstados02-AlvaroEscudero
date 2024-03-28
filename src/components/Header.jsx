@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 export function Header(){
-    const user = useSelector((state) => state.user);
+    const user = useSelector((state) => state.user); //seleccionamos el usuario que esta en el estado
 
     return(
         <header>
